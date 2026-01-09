@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Campus Complaint System</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+
+<h1>CAMPUS COMPLAINT & ISSUE TRACKING SYSTEM</h1>
+
+<div class="form-box">
+    <input type="text" id="name" placeholder="Student Name">
+    <input type="text" id="roll" placeholder="Roll Number">
+    <input type="text" id="dept" placeholder="Department">
+   
+   
+    <select id="category">
+        <option value="">Select Category</option>
+        <option>Hostel</option>
+        <option>Classroom</option>
+        <option>Library</option>
+        <option>Transport</option>
+        <option>Others</option>
+    </select>
+
+    <textarea id="issue" placeholder="Describe the issue"></textarea>
+
+    <button type="button" id="submitBtn">Submit Complaint</button>
+    <button type="button" id="resetBtn">Reset All</button>
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Roll</th>
+            <th>Department</th>
+            <th>Category</th>
+            <th>Issue</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody id="complaintTable"></tbody>
+</table>
+
+<script src="project.js"></script>
+</body>
+</html>
